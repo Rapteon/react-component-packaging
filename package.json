@@ -1,0 +1,26 @@
+{
+  "name": "my-component-library",
+  "version": "0.0.1",
+  "description": "A template project for packaging React components using Webpack and NPM.",
+  "keywords": [
+    "template",
+    "webpack",
+    "react",
+    "npm"
+  ],
+  "homepage": "https://github.com/Rapteon/react-component-packaging#readme",
+  "bugs": {
+    "url": "https://github.com/Rapteon/react-component-packaging/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rapteon/react-component-packaging.git"
+  },
+  "license": "MIT",
+  "author": "Rapteon",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
