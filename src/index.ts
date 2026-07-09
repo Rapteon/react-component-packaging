@@ -1,3 +1,1 @@
-import Card from "./components/card/Card";
-
-export default {Card};
+export * from "./components/card/Card.tsx";

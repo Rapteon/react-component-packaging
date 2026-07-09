@@ -24,9 +24,14 @@ const config: webpack.Configuration = {
             }
         }
       },
+      {
+        test: /\.css$/i,
+        use: ['style-loader', 'css-loader']
+      }
     ],
   },
   resolve: {
+    fullySpecified: true,
     extensions: [".tsx", ".ts", ".js"],
     extensionAlias: {
         ".js": [".js", ".ts"],
@@ -38,6 +43,10 @@ const config: webpack.Configuration = {
     filename: "bundle.js",
     path: path.resolve(__dirname, "dist"),
     clean: true,
+    library: {
+        name: "myComponents",
+        type: "umd"
+    }
   },
   devtool: "inline-source-map"
 };

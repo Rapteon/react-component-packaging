@@ -19,7 +19,10 @@
   "license": "MIT",
   "author": "Rapteon",
   "type": "module",
-  "main": "index.js",
+  "main": "./dist/bundle.js",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build:dev": "npx webpack --config webpack.config.ts",
     "serve": "npx webpack-dev-server",
@@ -34,6 +37,8 @@
     "@types/react": "^19.2.17",
     "@types/react-dom": "^19.2.3",
     "babel-loader": "^10.1.1",
+    "css-loader": "^7.1.4",
+    "style-loader": "^4.0.0",
     "ts-loader": "^9.6.2",
     "ts-node": "^10.9.2",
     "typescript": "^7.0.2",
